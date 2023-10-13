@@ -41,10 +41,30 @@
 /* Adicionadas manualmente */
 * {
   box-sizing: border-box;
+  
+}
+
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
 }
 
 body {
   padding: 1rem 8rem;
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .avatar {
@@ -53,9 +73,98 @@ body {
   min-height: 70px;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-centered-c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-row-centered-m {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-centered-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-column-centered-m {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .profile {
   border: 1px solid #aaa;
   border-radius: 6px;
   margin-top: 20px;
   padding: 10px;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
 }
