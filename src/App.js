@@ -5,6 +5,7 @@ import { getImageUrl } from "./js/utils.js";
 export function Profile({
   name,
   imageUrl,
+  imageSize,
   profession,
   nAwards,
   awards,
@@ -12,19 +13,20 @@ export function Profile({
 }) {
   return (
     <section className="profile">
-      <h2>{name}</h2>
-      <img
-        className="avatar"
-        src={getImageUrl(imageUrl)}
-        alt={name}
-        width={70}
-        height={70}
-      />
+      <div class="flex-row">
+        <img
+          className="avatar"
+          src={getImageUrl(imageUrl)}
+          alt={name}
+          width={100}
+          height={100}
+          />
+        <div class="flex-column-centered-m">
+          <h2>{name}</h2>
+          <p class="text-muted">{profession}</p>
+        </div>
+      </div>
       <ul>
-        <li>
-          <b>Profession: </b>
-          {profession}
-        </li>
         <li>
           <b>Awards: {nAwards} </b>
           {awards}
