@@ -47,18 +47,18 @@ function App() {
       <Profile
         name="Maria Skłodowska-Curie"
         imageUrl="szV5sdG"
-        profession="physicist and chemist"
+        profession="Physicist and chemist"
         nAwards="4"
         awards="(Nobel Prize in Physics, Nobel Prize in Chemistry, Davy Medal, Matteucci Medal)"
-        discoverys="polonium (chemical element)"
+        discoverys="polonium (chemical element)."
       ></Profile>
       <Profile
         name="Katsuko Saruhashi"
         imageUrl="YfeOqp2"
-        profession="geochemist"
+        profession="Geochemist"
         nAwards="2"
         awards="(Miyake Prize for geochemistry, Tanaka Prize)"
-        discoverys="a method for measuring carbon dioxide in seawater"
+        discoverys="a method for measuring carbon dioxide in seawater."
       ></Profile>
     </div>
   );
