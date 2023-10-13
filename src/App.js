@@ -21,9 +21,9 @@ export function Profile({
           width={100}
           height={100}
           />
-        <div class="flex-column-centered-m">
+        <div className="flex-column-centered-m profile-info">
           <h2>{name}</h2>
-          <p class="text-muted">{profession}</p>
+          <p className="text-muted profile-profession">{profession}</p>
         </div>
       </div>
       <ul>

@@ -161,7 +161,15 @@ p {
   border: 1px solid #aaa;
   border-radius: 6px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 1.5rem;
+}
+
+.profile-info {
+  margin-left: 1rem;
+}
+
+.profile-profession {
+  margin: 0;
 }
 
 .text-muted {
