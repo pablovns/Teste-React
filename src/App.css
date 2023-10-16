@@ -41,7 +41,6 @@
 /* Adicionadas manualmente */
 * {
   box-sizing: border-box;
-  
 }
 
 :root {
@@ -72,6 +71,15 @@ body {
   border-radius: 50%;
   min-height: 70px;
 }
+
+.card {
+  width: fit-content;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  background: #fff;
+} 
 
 .flex-row {
   display: flex;
