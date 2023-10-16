@@ -3,7 +3,7 @@ import { getImageUrl } from "../utils.js";
 export default function Avatar({
   name,
   imageUrl,
-  imageSize,
+  imageSize = 80,
   profession
 }) {
   return (
