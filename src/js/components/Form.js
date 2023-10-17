@@ -30,7 +30,10 @@ export default function Form() {
         onChange={handleLastNameChange}
       />
       <h1>
-        Hi, {firstName} {lastName}
+        {
+          (firstName || lastName) && // não exibe nada caso ambos os campos estejam vazios
+          `Hi, ${firstName} ${lastName && `${lastName}`}` // adiciona espaço antes do segundo nome somente se ele estiver preenchido
+        }
       </h1>
       <button onClick={handleReset}>Reset</button>
     </form>
