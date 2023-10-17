@@ -3,6 +3,7 @@ import Profile from "./js/components/Profile.js";
 import Avatar from "./js/components/Avatar.js";
 import Card from "./js/components/Card.js";
 import Form from "./js/components/Form.js";
+import FeedbackForm from "./js/components/FeedbackForm.js";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
        <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
       </Card>
       <Form></Form>
+      <FeedbackForm></FeedbackForm>
     </div>
   );
 }
