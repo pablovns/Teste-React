@@ -4,6 +4,7 @@ import Avatar from "./js/components/Avatar.js";
 import Card from "./js/components/Card.js";
 import Form from "./js/components/Form.js";
 import FeedbackForm from "./js/components/FeedbackForm.js";
+import Greeting from "./js/components/Greeting.js";
 
 function App() {
   return (
@@ -51,8 +52,15 @@ function App() {
        <h1>About</h1>
        <p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>
       </Card>
-      <Form></Form>
-      <FeedbackForm></FeedbackForm>
+      <Card>
+        <Form></Form>
+      </Card>
+      <Card>
+        <FeedbackForm></FeedbackForm>
+      </Card>
+      <Card>
+        <Greeting></Greeting>
+      </Card>
     </div>
   );
 }
