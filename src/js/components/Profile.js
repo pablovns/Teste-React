@@ -7,7 +7,7 @@ export default function Profile({
   profession,
   nAwards,
   awards,
-  discoverys
+  discoverys,
 }) {
   return (
     <section className="profile">
